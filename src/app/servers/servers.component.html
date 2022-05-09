@@ -1,0 +1,12 @@
+<p>{{messages}}</p>
+<button class="btn btn-primary" [disabled]="allownew" (click)="changeMessages()">OK</button>
+<!-- <input type="text" (input)="onUpdateInput($event)"> -->
+<!-- <input type="text" (input)="onUpdateInput($event)"> -->
+<input type="text" [(ngModel)]="updateInput" class="form-control">
+{{updateInput}}
+<hr>
+
+<input type="text" [(ngModel)]="updateInputTest" class="form-control">
+{{updateInputTest}}
+<!-- <button class="btn btn-danger" [disable]="allownewtest" (click)="cleardata()">Clear</button> -->
+<button class="btn btn-danger" [disabled]="!updateInputTest" (click)="cleardata()">OK</button>
